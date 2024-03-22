@@ -295,6 +295,7 @@
             order.addEventListener("click", () =>{
                 document.getElementById("error").innerText = '';
                 let name = document.getElementById("user_name").value;
+                let select = document.getElementById("type").value;
                 let email = document.getElementById("user_email").value;
                 let phone = document.getElementById("user_phone").value;
                 if(name.length < 5) {
@@ -311,6 +312,7 @@
                 }
 
                 let data = {
+                    selection: select,
                     name: name,
                     email: email,
                     phone: phone
