@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport"
+              content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge"
+        <title>Shop</title>
+        <style>
+            @import url("https://fonts.googleapis.com/css?family=Playfair");
+
+            *{
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+
+            body {
+                font-family: 'Playfair', sans-serif;
+                font-weight: 200;
+                color: var(--tg-theme-text-color);
+                background: var(--tg-theme-bg-color);
+            }
+
+            #main {
+                width: 100%;
+                padding: 20px;
+                text-align: center;
+            }
+
+            h1 {
+                margin-top: 50px;
+                margin-bottom: 10px;
+            }
+
+            img {
+                width: 70px;
+                margin: 30px auto;
+            }
+
+            p {
+                width: 350px;
+                margin: 0 auto;
+            }
+
+            button {
+                border: 0;
+                border-radius: 5px;
+                margin-top: 50px;
+                height: 60px;
+                width: 200px;
+                font-size: 20px;
+                font-weight: 500;
+                transition: all 500ms ease;
+                color: var(--tg-theme-button-color);
+                background: var(--tg-theme-button-text-color);
+            }
+
+            button:hover {
+                background: var(--tg-theme-secondary-bg-color);
+            }
+
+            #form{
+                display: none;
+                text-align: center;
+            }
+
+            input {
+                width: 90%;
+                outline: none;
+                margin: 10px 5%;
+                padding: 15px 10px;
+                font-size: 14px;
+                border: 2px solid silver;
+                border-radius: 5px;
+            }
+
+            input:focus {
+                border-color: #db5d5d;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="main">
+            <h1>Online shop</h1>
+            <img src="">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad perspiciatis, rem dolores, quo earum veritatis porro omnis dolorem commodi dolorum labore explicabo aspernatur eum quisquam natus? Ea temporibus nesciunt repellendus.</p>
+            <button id="buy">Buy</button>
+        </div>
+        <form id="form">
+            <div class="col-md-3 col-xs-6">
+                <label><h5>Вид обуви</h5></label>
+                <select class="form-control" id="type" name="type" required="">
+                <option disabled="" selected="" value="">Выберите из списка..</option>
+                          
+                            <option value="АКВАШУЗЫ">АКВАШУЗЫ</option>
+                          
+                            <option value="БАЛЕТКИ">БАЛЕТКИ</option>
+                          
+                            <option value="БОКСЕРКИ">БОКСЕРКИ</option>
+                          
+                            <option value="БОРЦОВКИ">БОРЦОВКИ</option>
+                          
+                            <option value="БОСОНОЖКИ">БОСОНОЖКИ</option>
+                          
+                            <option value="БОТИЛЬОНЫ">БОТИЛЬОНЫ</option>
+                          
+                            <option value="БОТИЛЬОНЫ ВЫСОКИЕ">БОТИЛЬОНЫ ВЫСОКИЕ</option>
+                          
+                            <option value="БОТИНКИ">БОТИНКИ</option>
+                          
+                            <option value="БОТИНКИ ВЫСОКИЕ">БОТИНКИ ВЫСОКИЕ</option>
+                          
+                            <option value="БОТИНКИ ДЛЯ БЕГОВЫХ ЛЫЖ">БОТИНКИ ДЛЯ БЕГОВЫХ ЛЫЖ</option>
+                          
+                            <option value="БОТИНКИ ДЛЯ ГОРНЫХ ЛЫЖ">БОТИНКИ ДЛЯ ГОРНЫХ ЛЫЖ</option>
+                          
+                            <option value="БОТИНКИ ПЛАВАТЕЛЬНЫЕ">БОТИНКИ ПЛАВАТЕЛЬНЫЕ</option>
+                          
+                            <option value="БОТИНКИ ПРОИЗВОДСТВЕННЫЕ">БОТИНКИ ПРОИЗВОДСТВЕННЫЕ</option>
+                          
+                            <option value="БОТИНКИ СНОУБОРДИЧЕСКИЕ">БОТИНКИ СНОУБОРДИЧЕСКИЕ</option>
+                          
+                            <option value="БОТИНКИ СПЕЦИАЛЬНЫЕ">БОТИНКИ СПЕЦИАЛЬНЫЕ</option>
+                          
+                            <option value="БОТЫ">БОТЫ</option>
+                          
+                            <option value="БОТЫ СПЕЦИАЛЬНЫЕ">БОТЫ СПЕЦИАЛЬНЫЕ</option>
+                          
+                            <option value="БРОГИ">БРОГИ</option>
+                          
+                            <option value="БУТСЫ">БУТСЫ</option>
+                          
+                            <option value="ВАЛЕНКИ">ВАЛЕНКИ</option>
+                          
+                            <option value="ВАЛЕНКИ СПЕЦИАЛЬНЫЕ">ВАЛЕНКИ СПЕЦИАЛЬНЫЕ</option>
+                          
+                            <option value="ВЕЛОТУФЛИ-ПОЛУБОТИНКИ">ВЕЛОТУФЛИ-ПОЛУБОТИНКИ</option>
+                          
+                            <option value="ВЕЛОТУФЛИ-ПОЛУБОТИНКИ">ВЕЛОТУФЛИ-ПОЛУБОТИНКИ</option>
+                          
+                            <option value="ВЬЕТНАМКИ">ВЬЕТНАМКИ</option>
+                          
+                            <option value="ГАЛОШИ">ГАЛОШИ</option>
+                          
+                            <option value="ГАЛОШИ СПЕЦИАЛЬНЫЕ">ГАЛОШИ СПЕЦИАЛЬНЫЕ</option>
+                          
+                            <option value="ГИМНАСТИЧЕСКИЕ ПОЛУТАПОЧКИ">ГИМНАСТИЧЕСКИЕ ПОЛУТАПОЧКИ</option>
+                          
+                            <option value="ГЛАДИАТОРЫ">ГЛАДИАТОРЫ</option>
+                          
+                            <option value="ДЕРБИ">ДЕРБИ</option>
+                          
+                            <option value="ДЖИБИТСЫ">ДЖИБИТСЫ</option>
+                          
+                            <option value="ДОМАШНИЕ / КОМНАТНЫЕ">ДОМАШНИЕ / КОМНАТНЫЕ</option>
+                          
+                            <option value="ДОМАШНИЕ-ТУФЛИ">ДОМАШНИЕ-ТУФЛИ</option>
+                          
+                            <option value="ДОМАШНЯЯ ОБУВЬ">ДОМАШНЯЯ ОБУВЬ</option>
+                          
+                            <option value="ДУТИКИ">ДУТИКИ</option>
+                          
+                            <option value="КЕДЫ">КЕДЫ</option>
+                          
+                            <option value="КЕДЫ ВЫСОКИЕ">КЕДЫ ВЫСОКИЕ</option>
+                          
+                            <option value="КРОССОВКИ">КРОССОВКИ</option>
+                          
+                            <option value="КРОССОВКИ ВЫСОКИЕ">КРОССОВКИ ВЫСОКИЕ</option>
+                          
+                            <option value="КРОССОВКИ РОЛИКОВЫЕ">КРОССОВКИ РОЛИКОВЫЕ</option>
+                          
+                            <option value="КРОССОВЫЕ-ПОЛУБОТИНКИ">КРОССОВЫЕ-ПОЛУБОТИНКИ</option>
+                          
+                            <option value="ЛОФЕРЫ">ЛОФЕРЫ</option>
+                          
+                            <option value="ЛУНОХОДЫ">ЛУНОХОДЫ</option>
+                          
+                            <option value="МОКАСИНЫ">МОКАСИНЫ</option>
+                          
+                            <option value="ОБУВЬ ДЛЯ ЕДИНОБОРСТВ">ОБУВЬ ДЛЯ ЕДИНОБОРСТВ</option>
+                          
+                            <option value="ОБУВЬ ДЛЯ ТЯЖЕЛОЙ АТЛЕТИКИ И СИЛОВЫХ ВИДОВ СПОРТА">ОБУВЬ ДЛЯ ТЯЖЕЛОЙ АТЛЕТИКИ И СИЛОВЫХ ВИДОВ СПОРТА</option>
+                          
+                            <option value="ОБУВЬ ПЛЯЖНАЯ">ОБУВЬ ПЛЯЖНАЯ</option>
+                          
+                            <option value="ОБУВЬ ТРЕНИРОВОЧНАЯ ДЛЯ ЗАНЯТИЙ СПОРТОМ">ОБУВЬ ТРЕНИРОВОЧНАЯ ДЛЯ ЗАНЯТИЙ СПОРТОМ</option>
+                          
+                            <option value="ОКСФОРДЫ">ОКСФОРДЫ</option>
+                          
+                            <option value="ПАНТОЛЕТЫ (ШЛЕПАНЦЫ)">ПАНТОЛЕТЫ (ШЛЕПАНЦЫ)</option>
+                          
+                            <option value="ПИНЕТКИ">ПИНЕТКИ</option>
+                          
+                            <option value="ПОЛУБОТИНКИ">ПОЛУБОТИНКИ</option>
+                          
+                            <option value="ПОЛУБОТИНКИ СПЕЦИАЛЬНЫЕ">ПОЛУБОТИНКИ СПЕЦИАЛЬНЫЕ</option>
+                          
+                            <option value="ПОЛУКЕДЫ">ПОЛУКЕДЫ</option>
+                          
+                            <option value="ПОЛУСАПОГИ">ПОЛУСАПОГИ</option>
+                          
+                            <option value="ПОЛУСАПОЖКИ">ПОЛУСАПОЖКИ</option>
+                          
+                            <option value="ПОЛУЧЕШКИ">ПОЛУЧЕШКИ</option>
+                          
+                            <option value="ПУАНТЫ">ПУАНТЫ</option>
+                          
+                            <option value="РЕЗИНОВЫЕ САПОГИ">РЕЗИНОВЫЕ САПОГИ</option>
+                          
+                            <option value="САБО">САБО</option>
+                          
+                            <option value="САМБОВКИ">САМБОВКИ</option>
+                          
+                            <option value="САНДАЛЕТЫ">САНДАЛЕТЫ</option>
+                          
+                            <option value="САНДАЛИИ">САНДАЛИИ</option>
+                          
+                            <option value="САПОГИ">САПОГИ</option>
+                          
+                            <option value="САПОГИ ПРОИЗВОДСТВЕННЫЕ">САПОГИ ПРОИЗВОДСТВЕННЫЕ</option>
+                          
+                            <option value="САПОГИ С УДЛИНЕННЫМИ ГОЛЕНИЩАМИ (БОТФОРТЫ)">САПОГИ С УДЛИНЕННЫМИ ГОЛЕНИЩАМИ (БОТФОРТЫ)</option>
+                          
+                            <option value="САПОГИ СПЕЦИАЛЬНЫЕ">САПОГИ СПЕЦИАЛЬНЫЕ</option>
+                          
+                            <option value="САПОЖКИ">САПОЖКИ</option>
+                          
+                            <option value="СКАЛЬНЫЕ ТУФЛИ">СКАЛЬНЫЕ ТУФЛИ</option>
+                          
+                            <option value="СЛАНЦЫ">СЛАНЦЫ</option>
+                          
+                            <option value="СЛИПЕРЫ">СЛИПЕРЫ</option>
+                          
+                            <option value="СЛИПОНЫ">СЛИПОНЫ</option>
+                          
+                            <option value="СНИКЕРЫ">СНИКЕРЫ</option>
+                          
+                            <option value="СНОУБУТСЫ">СНОУБУТСЫ</option>
+                          
+                            <option value="СРЕДСТВА ДОПОЛНИТЕЛЬНОЙ ЗАЩИТЫ НОГ ОТ УДАРОВ В НОСОЧНОЙ ЧАСТИ">СРЕДСТВА ДОПОЛНИТЕЛЬНОЙ ЗАЩИТЫ НОГ ОТ УДАРОВ В НОСОЧНОЙ ЧАСТИ</option>
+                          
+                            <option value="ТАПОЧКИ">ТАПОЧКИ</option>
+                          
+                            <option value="ТАПОЧКИ (САНДАЛИИ) СПЕЦИАЛЬНЫЕ">ТАПОЧКИ (САНДАЛИИ) СПЕЦИАЛЬНЫЕ</option>
+                          
+                            <option value="ТОПСАЙДЕРЫ">ТОПСАЙДЕРЫ</option>
+                          
+                            <option value="ТУФЛИ">ТУФЛИ</option>
+                          
+                            <option value="ТУФЛИ ДЛЯ ХОЖДЕНИЯ ПО КОРАЛЛАМ">ТУФЛИ ДЛЯ ХОЖДЕНИЯ ПО КОРАЛЛАМ</option>
+                          
+                            <option value="ТУФЛИ КУПАЛЬНЫЕ">ТУФЛИ КУПАЛЬНЫЕ</option>
+                          
+                            <option value="ТУФЛИ ЛЕТНИЕ">ТУФЛИ ЛЕТНИЕ</option>
+                          
+                            <option value="ТУФЛИ ПРОИЗВОДСТВЕННЫЕ">ТУФЛИ ПРОИЗВОДСТВЕННЫЕ</option>
+                          
+                            <option value="ТУФЛИ СПЕЦИАЛЬНЫЕ">ТУФЛИ СПЕЦИАЛЬНЫЕ</option>
+                          
+                            <option value="ТУФЛИ ТАНЦЕВАЛЬНЫЕ">ТУФЛИ ТАНЦЕВАЛЬНЫЕ</option>
+                          
+                            <option value="УГГИ">УГГИ</option>
+                          
+                            <option value="УНТЫ">УНТЫ</option>
+                          
+                            <option value="ЧЕЛСИ">ЧЕЛСИ</option>
+                          
+                            <option value="ЧЕШКИ">ЧЕШКИ</option>
+                          
+                            <option value="ЭСПАДРИЛЬИ">ЭСПАДРИЛЬИ</option>
+                          
+                </select>
+              </div>
+            <input type="text" placeholder="Name" id="user_name">
+            <input type="text" placeholder="Email" id="user_email">
+            <input type="text" placeholder="Numver" id="user_phone">
+            <div id="error"></div>
+            <button id="order">Submit</button>
+        </form>
+        <script src="https://telegram.org/js/telegram-web-app.js"></script>
+        <script>
+            let tg = window.Telegram.WebApp;
+            let buy = document.getElementById("buy");
+            let order = document.getElementById("order");
+            tg.expand();
+
+            buy.addEventListener("click", () =>{
+                document.getElementById("main").style.display = "none";
+                document.getElementById("form").style.display = "block";
+                document.getElementById("user_name").value = tg.initDataUnsafe.user.firstname + "" + tg.initDataUnsafe.user.lastname
+            });
+
+            order.addEventListener("click", () =>{
+                document.getElementById("error").innerText = '';
+                let name = document.getElementById("user_name").value;
+                let email = document.getElementById("user_email").value;
+                let phone = document.getElementById("user_phone").value;
+                if(name.length < 5) {
+                    document.getElementById("error").innerText = 'Ошибка в имени';
+                    return;
+                }
+                if(email.length < 5) {
+                    document.getElementById("error").innerText = 'Ошибка в почте';
+                    return;
+                }
+                if(phone.length < 5) {
+                    document.getElementById("error").innerText = 'Ошибка в номере';
+                    return;
+                }
+
+                let data = {
+                    name: name,
+                    email: email,
+                    phone: phone
+                }
+                tg.sendData(JSON.stringify(data));
+
+
+                tg.close();
+            });
+        </script>
+    </body>
+</html>
